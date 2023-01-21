@@ -16,6 +16,6 @@ module.exports = {
       version: 'detect'
     }
   },
-  extends: ['plugin:react/recommended', 'airbnb', 'prettier', 'prettier/react'],
+  extends: ['prettier', 'prettier/react'],
   plugins: ['prettier']
 };
