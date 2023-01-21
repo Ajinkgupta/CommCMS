@@ -17,5 +17,5 @@ module.exports = {
     }
   },
   extends: ['plugin:react/recommended', 'airbnb', 'prettier', 'prettier/react'],
-  plugins: ['react', 'prettier']
+  plugins: ['prettier']
 };
