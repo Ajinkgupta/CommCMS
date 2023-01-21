@@ -16,6 +16,4 @@ module.exports = {
       version: 'detect'
     }
   },
-  extends: ['prettier', 'prettier/react'],
-  plugins: ['prettier']
 };
