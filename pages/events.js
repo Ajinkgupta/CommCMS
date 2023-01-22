@@ -18,7 +18,7 @@ const MyEvents = ({ data }) => {
       <main className='h-[100vh] px-3'>
         <div>
         <h1 className='text-6xl text-center pt-3 font-extrabold'> Events</h1>
-
+     <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-12 place-items-center ">
           {data?.events?.map((item, index) => (
             <>
              <div key={index}>   
@@ -47,7 +47,7 @@ const MyEvents = ({ data }) => {
            </div>
             
             </>
-          ))}
+          ))} </div>
         </div>
       </main>
     </div>
