@@ -26,7 +26,7 @@ const MyBlog = ({ singleBlog, content }) => {
 
        <div class="sm:-mx-5 md:-mx-10 lg:-mx-20 xl:-mx-38 mb-5">
 <img
- class="rounded-lg aspect-video	"
+ class="rounded-lg w-[100%]"
  src={singleBlog.blogs[0].bannerImage.url}
  alt={singleBlog.blogs[0].title}
   
