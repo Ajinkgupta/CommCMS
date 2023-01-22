@@ -59,6 +59,7 @@ const MyBlogs = ({ blogs }) => {
       <h1 className='text-6xl text-center pt-3 font-extrabold'>Blogs</h1>
 
 <br/>
+         <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-12 place-items-center ">
 {data?.blogsConnection?.edges.map((item, index) => (         
      <div key={index}>   
               <NextLink href={`/blog/${item.node.slug}`} passHref>
@@ -86,7 +87,7 @@ const MyBlogs = ({ blogs }) => {
               </NextLink>
            </div>
 
-          ))}
+          ))} </div>
 
        <br/> 
 
