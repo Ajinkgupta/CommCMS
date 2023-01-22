@@ -31,12 +31,12 @@ const Home = ({ data }) => {
 {/* hero Ended here*/}
 
 
-<div className="  h-[100vh] px-10">
+<div className="  px-10">
  
 <h2 className='text-6xl text-center font-extrabold'> Events</h2>
 
 <br/>
-
+ <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-12 place-items-center ">
 {data?.events?.map((item, index) => (
             <div key={index}>   
               <NextLink href={`/event/${item.slug}`} passHref>
@@ -63,7 +63,7 @@ const Home = ({ data }) => {
               </NextLink>
            </div>
 
-          ))}
+          ))}</div>
 
        <br/> 
 
@@ -80,11 +80,13 @@ const Home = ({ data }) => {
 
 {/* Event Ended here*/}
 
-<div className="  h-[100vh] px-10">
+<div className=" px-10">
  
 <h2 className='text-6xl text-center font-extrabold'>Blogs</h2>
 
-<br/>
+<br/> 
+ <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-12 place-items-center ">
+
 {data?.blogs?.map((item, index) => (
             <div key={index}>   
               <NextLink href={`/blog/${item.slug}`} passHref>
@@ -112,7 +114,7 @@ const Home = ({ data }) => {
            </div>
 
           ))}
-
+</div>
        <br/> 
 
 
